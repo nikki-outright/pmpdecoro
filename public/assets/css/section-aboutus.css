@@ -1,0 +1,194 @@
+.rotating {
+  animation: rotating 12s linear infinite;
+}
+.rounded-text {
+  text-transform: uppercase;
+  transform: rotate(-103deg);
+  color: #fff;
+  z-index: 2;
+  max-width: 225px;
+  width: 100%;
+  margin: 100px auto;
+}
+.coloring {
+  animation: coloring 12s linear infinite;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.about_small .theme_main_description {
+  margin-top: 15px;
+}
+.about_small.image-part {
+  max-width: 50%;
+  width: 100%;
+  padding: 0px 15px;
+  float: left;
+}
+.single_image_part .theme_main_description {
+  margin-top: 15px;
+}
+.single_image_part {
+  max-width: 50%;
+  width: 100%;
+  float: left;
+  padding: 0px 15px;
+}
+.main-aboutus-section{
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-aboutus-section .full_width .abut-main-row{
+   margin: 0; 
+}
+.main-aboutus-section .abut-main-row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-aboutus-section .about-first-part{
+  max-width: 50%;
+  width: 100%;
+  padding: 0px 15px;
+  order: 2;
+}
+.main-aboutus-section .about-second-part{
+  max-width: 50%;
+  width: 100%;
+  padding: 0px 15px;
+  order: 1;
+}
+.main-aboutus-section .about-rounded-img {
+  padding-left: 270px;
+  padding-top: 75px;
+}
+.main-aboutus-section svg,
+.main-aboutus-section img{
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.main-aboutus-section .about-hover-img:hover img{
+  scale: 1.1;
+}
+.main-aboutus-section .image-bottom-content,
+.main-aboutus-section .theme_buttons{
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+.main-aboutus-section .media{
+  cursor: pointer;
+  border-radius: var(--media-radius); 
+}
+.main-aboutus-section .media img{
+  transition: all .5s ease;
+}
+.main-aboutus-section .media img:hover{
+  scale: 1.1;
+}
+@media screen and (max-width: 1429px) {
+  .main-aboutus-section .image-bottom-content,
+  .main-aboutus-section .theme_buttons{
+    margin-top: 30px;
+  }
+  .main-aboutus-section .about-rounded-img {
+    padding-left: 230px;
+    padding-top: 45px;
+  }
+  .main-aboutus-section .about-second-part {
+    padding: 0 15px 0 35px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .main-aboutus-section .image-bottom-content,
+  .main-aboutus-section .theme_buttons{
+    margin-top: 30px;
+  }
+  .main-aboutus-section .about-rounded-img {
+    padding-left: 175px;
+    padding-top: 25px;
+  }
+  .main-aboutus-section .about-second-part {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .rounded-text{
+    margin: 70px auto;
+    max-width: 140px;
+  }
+  .main-aboutus-section .image-bottom-content,
+  .main-aboutus-section .theme_buttons{
+    margin-top: 25px;
+  }
+  .main-aboutus-section .about-first-part {
+    max-width: 55%;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .main-aboutus-section .about-second-part {
+    max-width: 45%;
+    width: 100%;
+  }
+  .main-aboutus-section .about-rounded-img {
+    padding-left: 125px;
+    padding-top: 15px;
+  }
+}
+@media screen and (max-width: 767px){
+  .main-aboutus-section .image-bottom-content,
+  .main-aboutus-section .theme_buttons{
+    margin-top: 20px;
+  }
+  .main-aboutus-section .abut-main-row {
+    row-gap: 30px;
+  }
+  .main-aboutus-section .about-first-part {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .main-aboutus-section .about-second-part {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .main-aboutus-section .about-rounded-img {
+    padding-left: 75px;
+  }
+}
+@media screen and (max-width: 575px){
+  .rounded-text{
+    margin: 25px auto;
+    max-width: 140px;
+  }
+  .main-aboutus-section .image-bottom-content,
+  .main-aboutus-section .theme_buttons{
+    margin-top: 15px;
+  }
+  .main-aboutus-section .about-first-part {
+    max-width: 100%;
+  }
+  .main-aboutus-section .about-second-part {
+    max-width: 100%;
+  }
+  .main-aboutus-section .about-rounded-img {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 479px){
+  .about_small.image-part {
+    max-width: 100%;
+    float: none;
+  }
+  .single_image_part {
+    max-width: 100%;
+    float: none;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,141 @@
+.main-collection-list-item3 .collection-card__image3 img{
+ transition: all 0.5s ease;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3 .collection-card__image3:hover img{
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+.main-collection-list-item3 .main-collection-list-wrapper3 .swiper-button-next, .main-collection-list-wrapper3 .swiper-button-prev{
+  opacity: 0;
+  position: absolute !important;
+  transform: translateY(-50%);
+}
+.main-collection-list-item3 .main-collection-list-wrapper3:hover .swiper-button-next, .main-collection-list-wrapper3:hover .swiper-button-prev{
+  opacity: 1;
+}
+.main-collection-list-item3 .collection-name-wrapper3{
+  text-align: center;
+  margin-top: 16px;
+}
+.main-collection-list-item3 .collection-card__image3 {
+  position: relative;
+}
+.main-collection-list-item3 .collection-product-count3{
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  transition: all .5s ease;
+}
+.main-collection-list-item3 .collection-name-wrapper3 .h3{
+  font-size: 18px;
+  transition: all .5s ease;
+  text-transform: var(--text_style);
+   font-weight: var(--text_weight);
+}
+.main-collection-item3 .theme_buttons {
+  margin-top: 10px;
+}
+.main-collection-list-item3 .category_img3{
+  padding: 30%;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.main-collection-list-item3 .classic .category_img3 svg,
+.main-collection-list-item3 .classic .category_img3 img{
+  border-radius: 50%;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.modern .category_img3{
+  padding: 0;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.modern .collection-card__image3 .category_img3:after{
+  opacity: 0;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.modern .collection-card__image3:hover .category_img3:after{
+  opacity: 1;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.modern .collection-card__image3:hover img{
+  scale: 1.1;
+  transform: rotate3d(0, 0, 0, 0);
+}
+
+
+
+.main-collection-list-item3 .main-collection-list-wrapper3.module .category_img3{
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.module .collection-card__image3{
+  padding: 30px 50px;
+  border-radius: var(--media-radius);
+  z-index: 1;
+  overflow: hidden;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.module .collection-product-count3t{
+  font-size: 14px;
+  transition: all .5s ease;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.module .collection-card__image3:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  transition: all .5s ease;
+  z-index: -1;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.module .collection-card__image3:hover:before {
+  height: 100%;
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.module .category_img3:after{
+ content: none; 
+}
+.main-collection-list-item3 .main-collection-list-wrapper3.module .collection-card__image3:hover img{
+  transform: rotate3d(0, 0, 0, 0);
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1429px){
+  .main-collection-list-item3 .main-collection-list-wrapper3.module .collection-card__image3{
+    padding: 30px 40px;
+  }
+}
+@media screen and (max-width: 1299px){
+  .main-collection-list-item3 .collection-name-wrapper3 .h3{
+    font-size: 16px;
+  }
+  .main-collection-list-item3 .main-collection-list-wrapper3.module .collection-card__image3 {
+    padding: 24px 30px;
+  }
+}
+@media screen and (max-width: 991px){
+  .main-collection-list-item3 .collection-name-wrapper3 .h3 {
+    font-size: 14px;
+  }
+  .main-collection-list-item3 .collection-product-count3{
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 680px){
+  .main-collection-list-item3 .main-collection-list-wrapper3.module .collection-card__image3 {
+    padding: 24px 24px;
+  }
+}
